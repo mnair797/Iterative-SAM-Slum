@@ -36,7 +36,7 @@ import cv2
 import numpy as np
 
 
-def calculate_granularity(mask):
+def calculate_granularity(mask): #Finding the mask that has the most granular roads
     # Count the number of white and black pixels
     num_white_pixels = np.sum(mask == 1)
     num_black_pixels = np.sum(mask == 0)
@@ -241,7 +241,7 @@ if __name__ == "__main__":
     from google.colab import drive
     drive.mount('/content/drive')
 
-    input_dir = '/content/drive/My Drive/SlumWMasks-V2-Train'  # Update with the path to your input directory in Google Drive
-    output_dir = '/content/drive/My Drive/presegment_karachi_2'  # Update with the path to your output directory in Google Drive
+    input_dir = 'path/to/your/data'  # Update with the path to your input directory in Google Drive
+    output_dir = 'path/to/your/data'  # Update with the path to your output directory in Google Drive
 
     main(input_dir, output_dir)
