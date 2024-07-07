@@ -8,6 +8,5 @@ year = {2024},
 publisher = {GitHub},
 journal = {GitHub repository},
 howpublished = {\url{https://github.com/yourusername/yourrepository}},
-note = {Accessed: 2024-07-06}
 }
 
